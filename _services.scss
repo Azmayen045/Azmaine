@@ -1,0 +1,80 @@
+@use '../../utils' as *;
+
+/*----------------------------------------*/
+/*  6.13 Servicess
+/*----------------------------------------*/
+.am-service-space{
+    @media #{$lg} {
+        padding-top: 95px;
+        padding-bottom: 80px;
+    }
+    @media #{$md} {
+        padding-top: 75px;
+        padding-bottom: 65px;
+    }
+    @media #{$sm} {
+        padding-top: 45px;
+        padding-bottom: 30px;
+    }
+    @media #{$xs} {
+        padding-top: 35px;
+        padding-bottom: 15px;
+    }
+}
+.amservices{
+    margin-right: -1px;
+    border: 4px solid #57595c;
+    padding: 40px; 
+    display: flex;
+    justify-content: center;
+    &__icon {
+        & a{
+            font-size: 35px;
+            display: flex;
+            justify-content: center;
+            color: var(--tp-black-common);
+            position: relative;
+            z-index: 2;
+            text-decoration: none;
+           
+        }
+    }
+    &__title{
+        font-size: 50px;
+        @media #{$xl} {
+            font-size: 25px;
+        }
+        @media #{$lg} {
+            font-size: 50px;
+            
+        }
+    }
+    &__icon{
+        height: 75px;
+        width: 90px;
+    }
+    
+    
+    
+    &-2{
+        margin-top: -2px;
+        padding-bottom: 14px;
+        @media #{$lg} {
+            margin-top: 0;
+            padding-bottom: 12px;
+        }
+        .amservices__icon{
+            & a{ 
+                font-size: 57px;
+                color: var(--tp-black-common);
+                display: inline-flex;
+                margin-left: 25px;
+            }
+        }
+    }
+}
+
+
+
+
+

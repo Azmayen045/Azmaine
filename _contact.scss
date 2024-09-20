@@ -1,0 +1,68 @@
+@use '../../utils' as *;
+
+.am-contact-space{
+    @media #{$lg} {
+        padding-top: 90px;
+        padding-bottom: 108px;
+    }
+    @media #{$md} {
+        padding-top: 75px;
+        padding-bottom: 65px;
+    }
+    @media #{$sm} {
+        padding-top: 45px;
+        padding-bottom: 30px;
+    }
+    @media #{$xs} {
+        padding-top: 45px;
+        padding-bottom: 15px;
+    }
+}
+.am-form-title{
+    font-size: 30px;
+}
+
+.am-contact-form-box{
+    & input, & textarea{
+        height: 60px;
+        border: 3px solid #57595C;
+        padding: 0 25px;
+        border-radius: 10px;
+        font-weight: 500;
+    }
+    & .p-relative{
+        & i{
+            position: absolute;
+            right: 25px;
+            top: 22px;
+        }
+    }
+    & textarea{
+        height: 120px;
+        padding-top: 20px;
+        padding-bottom: 20px;
+
+    }
+}
+
+.contact-btn{
+    & a{
+        background: var(--am-body-color);
+        color: #fff;
+        padding: 16px 45px;
+        font-size: 18px;
+        font-family: var(--am-font-body);
+        text-decoration: none;
+        display: inline-block;
+        border-radius: 10px;
+        border: 1px solid rgb(53,53,53);
+    }
+}
+
+.contact-section-title-wrapper{
+    padding-bottom: 50px;
+    @media #{$lg,} {
+        padding-bottom: 0;
+      }
+    
+}

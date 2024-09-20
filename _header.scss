@@ -1,0 +1,107 @@
+@use '../../utils' as *;
+
+/*----------------------------------------*/
+/*  3.1 Header Style 1
+/*----------------------------------------*/
+
+.am-header-area.pl-100{
+    @media #{$md,$sm} {
+        padding-left: 0;
+      }
+    @media #{$xs} {
+        padding-left: 20px;
+        padding-right: 20px;
+      }
+    
+}
+
+.am-logo{
+    & a{
+        width: 168px;
+        font-family: var(--am-font-heading);
+        font-size: 45px;
+        color: var(--am-common-black);
+        text-decoration: none;
+        @media #{$lg} {
+            font-size: 65px;
+          }
+        @media #{$md} {
+            font-size: 53px;
+          }
+          @media #{$sm} {
+            font-size: 60px;
+          }
+          @media #{$xs} {
+            font-size: 35px;
+          }
+    }
+}
+
+
+
+
+
+.am-main-menu{
+    & ul{
+        & > li {
+            display: inline-block;
+            position: relative;
+            padding-right: 45px;
+            & > a {
+                text-decoration: none;
+                color: #222;
+                font-family: var(--am-font-body);
+                font-size: 22px;
+                display: inline-block;
+                padding-top: 45px;
+                position: relative;
+                transition: .6s;
+                &:hover{
+                  color: rgb(121, 85, 216);
+                  margin: 0;
+                  padding: 0;
+                  border-bottom: 1px solid rgb(121, 85, 216);
+                  display: inline-block;
+                }
+            }
+        }
+    }
+}
+
+
+
+
+.am-header-bar {
+    & button{
+          padding-top: 25px;
+          padding-right: 25px;
+          padding-left: 25px;
+        @media #{$lg} {
+          padding-top: 20px;
+          padding-right: 50px;
+          padding-left: 20px;
+          }
+          @media #{$md,$sm,$xs} {
+          padding-top: 10px;
+          padding-right: 5px;
+          padding-left: 15px;
+          }
+        & i{
+            color: #23252D;
+            font-size: 60px;
+            @media #{$lg} {
+                font-size: 100px;
+              }
+              @media #{$md} {
+                font-size: 80px;
+              }
+              @media #{$sm} {
+                font-size: 70px;
+              }
+              @media #{$sm} {
+                font-size: 60px;
+              }
+        }
+    }
+}
+

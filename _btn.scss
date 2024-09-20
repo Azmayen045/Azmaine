@@ -1,0 +1,41 @@
+@use '../utils' as *;
+
+/*----------------------------------------*/
+/*  2.4 Button
+/*----------------------------------------*/
+.am-about-btn{
+  & a{
+    text-decoration: none;
+  }
+}
+.am-btn{
+  color: rgb(53,53,53);
+  background: #fff;
+  padding: 15px 12px;
+  font-size: 12px;
+  font-family: var(--am-font-body);
+  border-radius: 60px;
+  border: 1px solid rgb(53,53,53);
+  transition: .5s;
+  font-weight: 400;
+  @media #{$xs,$md,$sm} {
+    padding: 23px 22px;
+    font-size: 9px;
+    border-radius: 36px;
+    display: inline-block;
+    text-align: center;
+    font-weight: 600;
+  }
+    &:hover{
+      background: rgb(53,53,53);
+      color: rgb(121, 85, 216);
+      font-weight: 600;
+    }
+}
+
+
+.am-about-btn{
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+}

@@ -1,0 +1,1 @@
+sass --watch D:\pranto-web-1\assets\scss\main.scss:D:\pranto-web-1\assets\css\style.css

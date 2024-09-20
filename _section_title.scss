@@ -1,0 +1,113 @@
+@use '../utils' as *;
+
+/*----------------------------------------*/
+/*  2.9 Section_title
+/*----------------------------------------*/
+
+
+
+.am-section {
+    &-subtitle{
+        color: #57595C;
+        font-size: 15px;
+        font-weight: 500;
+        text-transform: uppercase;
+        display: block;
+        &-white{
+            color: #A3AEC3;
+        }
+        & i{
+            width: 10px;
+            height: 10px;
+            border-radius: 30px;
+            background: var(--am-theme-color);
+            display: inline-block;
+            &.sub-dot-color{
+                background: var(--am-theme-orange);
+            }
+            
+        }
+    }
+    &-title {
+        font-size: 60px;
+        &.tp-fs-40{
+            font-size: 40px;
+        }
+        @media #{$lg} {
+            font-size: 70px;
+        }
+        @media #{$md,$sm} {
+            font-size: 55px;
+         }
+         
+         & br {
+            @media #{$xs} {
+                display: none;
+             }
+        }
+        &-br{
+            & br{
+                @media #{$xl,$lg,$md,$xs} {
+                    display: none;
+                 }
+            }
+        }
+        &-white{
+            color: #fff;
+        }
+        &-wrapper{
+            & p{
+                font-weight: 600;
+                color: var(--am-body-color);
+                font-family: var(--am-font-body);
+                @media #{$lg,$md,$sm} {
+                    font-size: 20px;
+                  }
+                & br{
+                    @media #{$xs} {
+                        display: none;
+                     }
+                }
+            }
+        }
+        &-40{
+            font-size: 40px;
+            @media #{$xs} {
+                font-size: 22px;
+             }
+        }
+        
+    }
+    &-title-content-white{
+        color:  #A3AEC3;
+        & b{
+            color: #fff;
+        }
+    }
+}
+.xl-fns-45{
+    @media #{$xl} {
+        font-size: 45px;
+     }
+}
+.am-services-details-list-item{
+    background: #FBF6EF;
+    padding: 30px;
+    & span{
+        font-size: 24px;
+        color: #fff;
+        background: #0057FC;
+        width: 50px;
+        height: 50px;
+        text-align: center;
+        line-height: 50px;
+        border-radius: 50%;
+        flex: 0 0 auto;
+    }
+}
+
+.am-services-details-list-title{
+    @media #{$lg} {
+        font-size: 20px;
+      }
+  }

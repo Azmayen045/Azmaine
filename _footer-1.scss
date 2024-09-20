@@ -1,0 +1,48 @@
+@use '../../utils' as *;
+
+/*----------------------------------------*/
+/*  5.1 Footer Style 1
+/*----------------------------------------*/
+.am-footer-text{
+    & p{
+        font-size:19px;
+        color: var(--am-body-color);
+        font-family: var(--am-font-heading);
+        text-align: center;
+        @media #{$lg} {
+            font-size: 19px;
+          }
+        @media #{$md} {
+            font-size: 17px;
+          }
+        @media #{$sm} {
+            font-size: 15px;
+          }
+        @media #{$xs} {
+            font-size: 12px;
+          }
+    }
+    & a{
+        text-decoration: none;
+        font-size: 16px;
+        font-weight: 500;
+        color: rgb(121, 85, 216);
+        font-family: var(--am-font-body)
+    }
+}
+
+
+// warning-area
+.am-warning-text{
+  font-size: 20px;
+  font-family: var(--am-font-body);
+  color: rgb(53,53,53);
+  @media #{$xs,$md,$sm} {
+    font-size: 14px;
+  }
+}
+
+.animate__fadeIn{
+  --animate-duration: 8s;
+  --animate-delay: 2s;
+}
